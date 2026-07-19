@@ -339,7 +339,7 @@ export default function ProfileCard({
               <div className="absolute bottom-4 left-4 flex gap-4 w-full">
                 <div className="flex items-center justify-between gap-7">
                   <a
-                    href="/CV - HuynhVinhDat.pdf"
+                    href="/cv-huynhvinhdat.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
