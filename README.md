@@ -1,73 +1,97 @@
-# React + TypeScript + Vite
+# Itsdat — Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My personal portfolio website — a showcase of my projects, skills, and experience as a Frontend Developer.
 
-Currently, two official plugins are available:
+🔗 **Live site:** [add your deployed link here]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Animated hero section with interactive backgrounds (particles, meteors, wireframe globe)
+- Smooth theme switch (light/dark mode)
+- Card-based project showcase with tilt & flip interactions
+- Skill section with visual highlights
+- Contact form section
+- Fully responsive layout for desktop and mobile
+- Downloadable / viewable CV directly from the site
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Framework:** React + TypeScript
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS
+- **UI Components:** shadcn/ui (Radix-based)
+- **Animation:** Custom animated components (particles, meteors, card-tilt, type animation, etc.)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📂 Project Structure
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+src/
+├── assets/                # Images and static assets
+├── components/
+│   ├── common/             # Reusable base components (heading, input, social)
+│   ├── feature/             # Theme provider and feature-level components
+│   ├── layout/              # Navbar and layout components
+│   └── ui/                  # UI building blocks (cards, backgrounds, animations)
+├── pages/
+│   └── home/
+│       ├── HomePage.tsx
+│       └── sections/         # Hero, About, Skill, Project, Contact sections
+├── lib/                    # Utility functions
+└── main.tsx                # App entry point
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Prerequisites
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Node.js (v18 or higher recommended)
+- npm
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/itsdat/portfolio.git
+
+# Navigate into the project
+cd portfolio
+
+# Install dependencies
+npm install
 ```
+
+### Development
+
+```bash
+npm run dev
+```
+
+The app will be available at `http://localhost:5173` (default Vite port).
+
+### Build for production
+
+```bash
+npm run build
+```
+
+### Preview production build
+
+```bash
+npm run preview
+```
+
+## 📄 CV
+
+You can view or download my CV directly from the site's `public/` folder or via the "View CV" button on the homepage.
+
+## 📬 Contact
+
+- **Email:** vinhdat20201220@gmail.com
+- **LinkedIn:** [linkedin.com/in/dat-vinh-8720b9361](https://linkedin.com/in/dat-vinh-8720b9361)
+- **GitHub:** [github.com/itsdat](https://github.com/itsdat)
+
+## 📝 License
+
+This project is open for reference. Feel free to explore the code, but please don't copy the content/assets directly for your own portfolio.

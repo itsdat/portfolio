@@ -344,7 +344,7 @@ export default function ProfileCard({
                     rel="noopener noreferrer"
                   >
                     <Button className="rounded-md px-2 py-1 text-sm transition-colors  border-2 border-dashed border-gray-400 cursor-pointer">
-                      <Download /> Download CV
+                      <Download /> View CV
                     </Button>
                   </a>
                   <Button
