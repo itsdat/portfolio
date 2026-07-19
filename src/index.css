@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@keyframes orbit {
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(360deg);
+    }
+}
+@keyframes counter-orbit {
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(-360deg);
+    }
+}
