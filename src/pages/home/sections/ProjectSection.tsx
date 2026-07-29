@@ -24,7 +24,7 @@ const projects = [
       "https://res.cloudinary.com/dxczzdnag/image/upload/v1785311466/eluzjfdbadpw4i7mw4xm.png",
     tech: ["React", ""],
     name: "Quick Chat",
-    desc: "A modern Spotify clone with core features like user authentication, music streaming, playlists, albums, artists, and responsive UI built with a sleek design.",
+    desc: "A real-time chat app with instant messaging, online status, and image sharing, built using Socket.IO for live communication and a clean, responsive UI.",
     github: "https://github.com/itsdat/quick-chat",
     link: "https://chat.hidras.xyz",
     type: PROJECT_TYPE.WEBSITE,
