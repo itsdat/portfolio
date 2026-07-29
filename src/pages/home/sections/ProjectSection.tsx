@@ -20,12 +20,13 @@ const projects = [
   },
   {
     id: 2,
-    image: "https://images.pexels.com/photos/6347888/pexels-photo-6347888.jpeg",
-    tech: ["Nextjs", ""],
-    name: "Luxe Shop",
+    image:
+      "https://res.cloudinary.com/dxczzdnag/image/upload/v1785311466/eluzjfdbadpw4i7mw4xm.png",
+    tech: ["React", ""],
+    name: "Quick Chat",
     desc: "A modern Spotify clone with core features like user authentication, music streaming, playlists, albums, artists, and responsive UI built with a sleek design.",
-    github: "",
-    link: "https://shop.hidras.xyz",
+    github: "https://github.com/itsdat/quick-chat",
+    link: "https://chat.hidras.xyz",
     type: PROJECT_TYPE.WEBSITE,
   },
   {
@@ -52,7 +53,10 @@ const projects = [
 
 export default function ProjectSection() {
   return (
-    <div className="w-full max-w-7xl mx-auto min-h-screen flex flex-col items-start justify-start gap-6 px-4 mb-10" id="projects">
+    <div
+      className="w-full max-w-7xl mx-auto min-h-screen flex flex-col items-start justify-start gap-6 px-4 mb-10"
+      id="projects"
+    >
       <BaseHeading title="My projects" />
 
       <div className="grid md:grid-cols-3 grid-cols-1 gap-5">
@@ -90,12 +94,17 @@ export default function ProjectSection() {
 
                 <img
                   src={item.image}
-                  alt="project_iamge"
+                  alt="project_image"
                   className="w-full object-cover aspect-video rounded-xl"
                 />
 
                 <div className="flex items-center justify-between w-full gap-3">
-                  <button className="cursor-pointer mt-4 w-full flex items-center justify-center gap-1 rounded-lg border-2 border-dashed border-slate-300 dark:border-neutral-700 py-3 text-sm font-medium text-slate-600 dark:text-slate-300 transition-colors hover:border-slate-400 dark:hover:border-neutral-600 hover:bg-slate-50 dark:hover:bg-neutral-800">
+                  <button
+                    onClick={() =>
+                      window.open(item.github, "_blank", "noopener,noreferrer")
+                    }
+                    className="cursor-pointer mt-4 w-full flex items-center justify-center gap-1 rounded-lg border-2 border-dashed border-slate-300 dark:border-neutral-700 py-3 text-sm font-medium text-slate-600 dark:text-slate-300 transition-colors hover:border-slate-400 dark:hover:border-neutral-600 hover:bg-slate-50 dark:hover:bg-neutral-800"
+                  >
                     {/* <img
                       src="https://cdn.simpleicons.org/github?color=181717"
                       alt="github_image"
