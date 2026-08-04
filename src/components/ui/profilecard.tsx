@@ -17,6 +17,7 @@ interface Skill {
     | string
     | React.ComponentType<React.SVGProps<SVGSVGElement>>
     | React.ReactElement;
+  link?: string;
 }
 
 interface SocialLink {
@@ -324,7 +325,12 @@ export default function ProfileCard({
                           }}
                         />
                       )}
-                      <div className="relative z-10">
+                      <div
+                        className="relative z-10"
+                        onClick={() =>
+                          skill.link && window.open(skill.link, "_blank")
+                        }
+                      >
                         {renderSkillIcon(skill)}
                       </div>
                     </div>
