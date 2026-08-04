@@ -22,7 +22,7 @@ const projects = [
     id: 2,
     image:
       "https://res.cloudinary.com/dxczzdnag/image/upload/v1785311466/eluzjfdbadpw4i7mw4xm.png",
-    tech: ["React", ""],
+    tech: ["React", "Socket.IO", "Node.js", "Express", "MongoDB"],
     name: "Quick Chat",
     desc: "A real-time chat app with instant messaging, online status, and image sharing, built using Socket.IO for live communication and a clean, responsive UI.",
     github: "https://github.com/itsdat/quick-chat",
@@ -31,7 +31,8 @@ const projects = [
   },
   {
     id: 3,
-    image: "https://res.cloudinary.com/dxczzdnag/image/upload/v1785550618/km0qlf2bzfd4gfr5pcz9.png",
+    image:
+      "https://res.cloudinary.com/dxczzdnag/image/upload/v1785550618/km0qlf2bzfd4gfr5pcz9.png",
     tech: [
       "ReactJS",
       "TypeScript",
@@ -48,12 +49,13 @@ const projects = [
   },
   {
     id: 4,
-    image: "https://images.pexels.com/photos/6347888/pexels-photo-6347888.jpeg",
-    tech: ["Nextjs", ""],
-    name: "Luxe Shop",
-    desc: "A modern Spotify clone with core features like user authentication, music streaming, playlists, albums, artists, and responsive UI built with a sleek design.",
-    github: "",
-    link: "https://shop.hidras.xyz",
+    image:
+      "https://res.cloudinary.com/dxczzdnag/image/upload/v1785814832/imw5kibt0h5v0gv2ayaf.png",
+    tech: ["Next.js", "Firebase", "TailwindCSS", "TypeScript"],
+    name: "Driftly",
+    desc: "A modern social network app with features like posts, likes, comments, and a responsive UI built with Next.js and Firebase.",
+    github: "https://github.com/itsdat/Driftly",
+    link: "https://driftly.hidras.xyz/",
     type: PROJECT_TYPE.WEBSITE,
   },
 ];
