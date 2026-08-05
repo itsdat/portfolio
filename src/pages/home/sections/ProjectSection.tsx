@@ -58,6 +58,17 @@ const projects = [
     link: "https://driftly.hidras.xyz/",
     type: PROJECT_TYPE.WEBSITE,
   },
+  {
+    id: 5,
+    image:
+      "https://res.cloudinary.com/dxczzdnag/image/upload/v1785898615/lzgux6uoh44bbhvmj753.png",
+    tech: ["ReactJs", "Node.js", "TailwindCSS", "Socket.IO", "MongoDB"],
+    name: "NexTalk",
+    desc: "A real-time chat app with instant messaging, image/file sharing, and online status tracking, powered by Socket.IO for live updates.",
+    github: "https://github.com/itsdat/NexTalk",
+    link: "https://nextalk.hidras.xyz/",
+    type: PROJECT_TYPE.WEBSITE,
+  },
 ];
 
 export default function ProjectSection() {
