@@ -100,7 +100,7 @@ const CardTilt = React.forwardRef<HTMLDivElement, CardTiltProps>(
           style={{ perspective: '1000px' }}
           {...props}
         >
-          <div className='absolute inset-0 rounded-2xl border-2 border-dashed border-slate-300' />
+          <div className='absolute inset-0 rounded-2xl border-2 border-dashed border-slate-300 dark:border-gray-500' />
           {children}
         </div>
       </CardTiltContext.Provider>
