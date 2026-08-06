@@ -10,11 +10,12 @@ const PROJECT_TYPE = {
 const projects = [
   {
     id: 1,
-    image: "https://images.pexels.com/photos/6347888/pexels-photo-6347888.jpeg",
-    tech: ["Nextjs", ""],
+    image:
+      "https://res.cloudinary.com/dxczzdnag/image/upload/v1785985383/wqtg8rgccpbuuym5abd7.png",
+    tech: ["NestJS", "TypeORM", "MySQL", "Next.js", "Tailwind CSS"],
     name: "Luxe Shop",
-    desc: "A modern Spotify clone with core features like user authentication, music streaming, playlists, albums, artists, and responsive UI built with a sleek design.",
-    github: "",
+    desc: "A full-stack e-commerce platform with product collections, variants, and image management. Backend built with NestJS, TypeORM, and MySQL; frontend built with Next.js and Tailwind CSS, featuring dynamic product forms with multi-image support and JWT-based authentication.",
+    github: "https://github.com/itsdat/Storeplate",
     link: "https://shop.hidras.xyz",
     type: PROJECT_TYPE.WEBSITE,
   },
