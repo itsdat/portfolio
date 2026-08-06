@@ -43,7 +43,7 @@ const projects = [
       "Cloudinary",
     ],
     name: "Tomato Food",
-    desc: "Full-stack food ordering platform with user auth, cart management, order tracking, and an admin dashboard, built with React, Node.js, Express, and MongoDB.",
+    desc: "Full-stack food ordering platform with auth, cart, and order tracking, plus an admin dashboard, built with React, Node.js, Express, and MongoDB.",
     github: "https://github.com/itsdat/Tomato_Food",
     link: "https://tomato-food.hidras.xyz/",
     type: PROJECT_TYPE.WEBSITE,
