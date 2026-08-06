@@ -113,9 +113,9 @@ export default function ContactSection() {
             <form
               ref={formRef}
               onSubmit={handleSubmit}
-              className="w-full border-2 border-dashed border-gray-300 p-2 rounded-2xl"
+              className="w-full border-2 border-dashed border-slate-300 dark:border-gray-500 p-2 rounded-2xl"
             >
-              <Card className="w-full bg-white dark:bg-black shadow-xl rounded-2xl md:p-3">
+              <Card className="w-full bg-white dark:bg-neutral-950 shadow-xl rounded-2xl md:p-3">
                 <CardHeader className="flex flex-col gap-1 px-4 py-2"></CardHeader>
 
                 <CardContent className="pt-0 flex flex-col gap-5 px-4">
@@ -155,7 +155,7 @@ export default function ContactSection() {
                 </CardContent>
 
                 <CardFooter className="flex justify-end items-center px-4 py-3 mt-3">
-                  <Button className="rounded-md px-4 py-1 text-sm transition-colors">
+                  <Button className="rounded-full px-4 py-1 text-sm transition-colors">
                     {loading ? (
                       "Sending..."
                     ) : (
