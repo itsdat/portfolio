@@ -16,7 +16,7 @@ const projects = [
     name: "Luxe Shop",
     desc: "Full-stack e-commerce platform with product collections, variants, and multi-image management, built with NestJS, MySQL, and Next.js.",
     github: "https://github.com/itsdat/Storeplate",
-    link: "https://shop.hidras.xyz",
+    link: "http://luxe-shop.hidras.xyz/",
     type: PROJECT_TYPE.WEBSITE,
   },
   {
